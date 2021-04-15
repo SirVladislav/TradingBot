@@ -7,7 +7,7 @@ const binance = new Binance().options({
 const express = require('express')
 const app = express()
 app.use(express.json())
-app.listen(3000)
+app.listen(80)
 
 app.post('/', function (req, res) {
   res.json(req.body);
@@ -17,7 +17,6 @@ console.log(req.body['text']);
     }else if(req.body['text'] == 'Sell'){
 
     }
-
 })
 
 
